@@ -40,6 +40,15 @@ namespace WorldCities.Data.Models
         /// <summary>
         /// Country Id (foreign key)
         /// </summary>
+        [ForeignKey("Country")]
         public int CountryId { get; set; }
+
+        #region Navigation Properties
+        /// <summary>
+        /// The country related to this city.
+        /// </summary>
+        public virtual Country Country { get; set; }
+        #endregion
+
     }
 }
