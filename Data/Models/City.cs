@@ -31,10 +31,14 @@ namespace WorldCities.Data.Models
         /// <summary>
         /// City latitude
         /// </summary>
+        [Column(TypeName = "decimal(7,4)")]
+
         public decimal Lat { get; set; }
         /// <summary>
         /// City longitude
         /// </summary>
+        [Column(TypeName = "decimal(7,4)")]
+
         public decimal Lon { get; set; }
         #endregion
         /// <summary>
